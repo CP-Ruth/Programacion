@@ -30,10 +30,10 @@ if(dia=="lunes" or dia=="martes" or dia=="miercoles"):
     alumn_desap=int(input("Ingrese cantidad de alumnos desaprobados: "))
     alumn_total= alumn_aprob+alumn_desap
     aprobados= int(alumn_aprob*100/alumn_total)
-    print(f"Prosentaje de aprob: {aprobados}%")
+    print(f"Porcentaje de aprob: {aprobados}%")
 elif(dia=="jueves"):
   print("Los jueves hay practicas habladas")
-  asistencia= int(input("Ingrese la cantidad de alumnos que asisten: "))
+  asistencia= int(input("Ingrese la cantidad de alumnos que asistieron: "))
   total_al=int(47)
   if(asistencia>(total_al/2)):
     print("Asistió la mayoría")
