@@ -137,9 +137,68 @@ elif a!=0 :
   print("la solución es x= ", x)
 
 #Ejercicio 15
-
+first= input("Si quiere calcular el área del triángulo ingrese (T), del círculo (C): ").upper()
+if first=="T":
+  base= float(input("Ingrese medida de la base: "))
+  heigh= float(input("Ingrese medida de la altura: "))
+  print("El area del triángulo es: ", base*heigh/2)
+elif first=="C":
+  rad= float(input("Ingrese medida del radio: "))
+  print("El area del círculo es: ", 3.14* rad**2)
 
 #Ejercicio 16
+a=int(input("a= "))
+b=int(input("b= "))
+opc=input("1: a+b, 2: a*b, 3: a-b, 4: a/b ")
+if opc=="1":
+  print(a+b)
+elif opc=="2":
+  print(a*b)
+elif opc=="3":
+  print(a-b)
+elif opc=="4":
+  print(a/b)
+else:
+  print("Ingrese un número del 1 al 4")
+
 #Ejercicio 17
+dia= input("Ingrese un día: ").upper()
+if dia=="LUNES":
+  print("¡Vamos, vos podes!")
+elif dia=="VIERNES":
+  print("¡Sí, llego el viernes!")
+elif dia=="SABADO" or dia=="DOMINGO":
+  print("¡Qué lindo es el fin de semana!")
+else:
+  print("Uy, que ya termine...")
+
 #Ejercicio 18
+horas_tr=int(input('Ingresar las horas trabajadas en el mes: '))
+sal_hora=int(input('Ingresar su salario por hora: '))
+if horas_tr>48:
+  print(f"Trabajaste {horas_tr-48}h extras")
+  salario= (sal_hora+sal_hora*0.1)*(horas_tr-48) + horas_tr*sal_hora
+  print("Tu salario este mes es $",salario)
+else:
+  salario= horas_tr*sal_hora
+  print("Tu salario este mes es $",salario)
+
 #Ejercicio 19
+cant_lapiz = int(input("Ingrese la cantidad de lapices a comprar: "))
+precio = 60 * cant_lapiz
+if cant_lapiz >= 1000:
+    precio_final = precio - (precio * 0.7)
+else:
+    precio_final = precio
+
+print(f"Se debe pagar ${precio_final} por los {cant_lapiz} lapices")
+
+#Ejercicio 20
+nota= int(input("Nota 1: "))
+nota+= int(input("Nota 2: "))
+nota+= int(input("Nota 3: "))
+nota+= int(input("Nota 4: "))
+if nota/4 >=6:
+  print("Aprobaste")
+else:
+  print("Desaprobaste")
