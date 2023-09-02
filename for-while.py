@@ -19,8 +19,8 @@ for j in range(0,5):
         mes_enc += alph[let_corr]
   print(mes_enc)
 
-  #2
-  print("Ingrese números Enteros Positivos. Si quiere para ingrese 0.")
+#2
+print("Ingrese números Enteros Positivos. Si quiere para ingrese 0.")
 even_n=0
 odd_n=0
 stop=1
@@ -29,12 +29,17 @@ while stop!=0:
   if num=="0":
     stop=0
   else:
+    poss=0
+    neg=0
     for i in range(0,len(num)):
       num_n= int(num[i])
       if num_n>=0:
         if num_n%2==0:
           even_n+=1
+          poss+=1
         else:
           odd_n+=1
+          neg+=1
+    print(f"Tiene {poss} dígitos pares y {neg} dígitos impares")
           
 print(f"cantidad de numeros pares:{even_n}, cantidad de numeros impares: {odd_n}")
