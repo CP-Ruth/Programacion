@@ -20,3 +20,21 @@ for j in range(0,5):
   print(mes_enc)
 
   #2
+  print("Ingrese números Enteros Positivos. Si quiere para ingrese 0.")
+even_n=0
+odd_n=0
+stop=1
+while stop!=0:
+  num= input("Su número: ")
+  if num=="0":
+    stop=0
+  else:
+    for i in range(0,len(num)):
+      num_n= int(num[i])
+      if num_n>=0:
+        if num_n%2==0:
+          even_n+=1
+        else:
+          odd_n+=1
+          
+print(f"cantidad de numeros pares:{even_n}, cantidad de numeros impares: {odd_n}")
