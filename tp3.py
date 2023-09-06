@@ -142,23 +142,72 @@ print("Las vocales que aparecen: ")
 for j in range(0,len(vowel)):
     if phrase.find(vowel[j])>-1:
       print(vowel[j])  
-  
 
 #Ejercicio 18
-
+fibonacci=[0,1]
+for i in range(2,11):
+  nuevo= fibonacci[i-2]+fibonacci[i-1]
+  fibonacci.append(nuevo)
+#fibonacci.append('...')
+print(fibonacci)
 
 #Ejercicio 19
-
+amount= int(input("¿Cuánto quieres ahorrar? "))
+piggy_bank=0
+while amount>piggy_bank:
+  num=int(input("$$ a guardar: $"))
+  if num>0:
+   piggy_bank+=num
+  else:
+    print("-.- No puede ser un número negativo.")
+print("¡Llegaste al monto deseado!")
 
 #Ejercicio 20
-
+num=int(input("Ingresa un numero: "))
+sum=0
+while num!=0:
+  sum+= num
+  num=int(input("Ingresa un numero: "))
+print(f"La sumatoria de todos los numeros distintos de cero ingresados: {sum}")
 
 #Ejercicio 21
-
+print("Ingresa números enteros positivos, cuando quieras para ingresa el cero: ")
+num=int(input("n°: "))
+max=0
+while num>0:
+  if num>max:
+    max=num
+  num=int(input("n°: "))
+print("El número más grande es: ",max)
 
 #Ejercicio 22
-
+num=int(input("Ingrese un numero entero positivo: "))
+even=0
+while num>0:
+  if num%2==0:
+    even+=1
+  sum=0
+  for i in range(len(str(num))):
+    sum+=int(str(num)[i])
+  print("La suma de los dígitos es: ", sum)
+  num=int(input("Ingrese un numero entero positivo: "))
+print("En total ingresaste",even," números pares")
 
 #Ejercicio 23
 #Ejercicio 24
+price=float(input("Precio del producto: $"))
+total=0
+while price!=0:
+  if price>0:
+    total+=price
+    price=float(input("Precio del producto: $"))
+  else:
+    print("Los precios no pueden ser negativos.")
+    price=float(input("Precio del producto: $"))
+if total>=1000:
+  discount =total- total*0.1
+  print("Tiene descuento del 10%. Su total es $",discount)
+else:
+  print("Monto total $",total)
+  
 #Ejercicio 25
