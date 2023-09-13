@@ -205,7 +205,7 @@ while price!=0:
     print("Los precios no pueden ser negativos.")
     price=float(input("Precio del producto: $"))
 if total>=1000:
-  discount =total- total*0.1
+  discount = total - total*0.1
   print("Tiene descuento del 10%. Su total es $",discount)
 else:
   print("Monto total $",total)
