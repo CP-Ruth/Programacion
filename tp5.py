@@ -55,9 +55,9 @@ for i in range(days):
 print(spacebetween(words))"""
 
 #Ejercicio 7
-#
-a=[]
 
+"""a=[]
+#¿Debería crear una función para validar los valores numéricos?
 while True:
     try:
         quantity = int(input("¿Cuántos numeros quieres ingresar?\n"))
@@ -75,5 +75,25 @@ for i in range(quantity):
             continue
     a.append(number)
 
-max_min_num(a)
+max_min_num(a)"""
+
+#Ejercicio 8
+
+radius=int(input("Ingresa el valor de la circunferencia: "))
+perim_area(radius)
+
+#Ejercicio 9
+
+
+
+#Ejercicio 8
+
+#Ejercicio 8
+
+#Ejercicio 8
+
+#Ejercicio 8
+
+
+
 

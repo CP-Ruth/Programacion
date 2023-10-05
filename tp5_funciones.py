@@ -61,7 +61,10 @@ def max_min_num(array):
     return print(f"El máximo valor es: {max}\nEl mínimo valor es: {min}")
 
 #Ejercicio 8
-
+def perim_area(radius):
+    area=radius*radius*3,14
+    perim= 2*3,14*radius
+    return print(f"El área: {area}, el perímetro: {perim}")
 
 #Ejercicio 9
 
