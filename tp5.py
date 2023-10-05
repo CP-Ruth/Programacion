@@ -79,14 +79,27 @@ max_min_num(a)"""
 
 #Ejercicio 8
 
-radius=int(input("Ingresa el valor de la circunferencia: "))
-perim_area(radius)
+"""radius=int(input("Ingresa el valor de la circunferencia: "))
+perim_area(radius)"""
 
 #Ejercicio 9
 
+time=0
+while True:
+    user_name = input("Ingresa tu usuario: ")
+    user_password = input("Ingresa tu contraseña: ")
+    if (login(user_name,user_password)):
+        print(f"Ingreso exitoso!\nNúmero de intentos: {time}")
+        break
+    else:
+        print("Usuario o contraseña incorrecta.\nVuelva a intentarlo.")
+        time+=1
+    if(time==3):
+        print(f"Número de intentos: {time}\nAcceso denegado.")
+
+#Ejercicio 10
 
 
-#Ejercicio 8
 
 #Ejercicio 8
 

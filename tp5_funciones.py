@@ -27,19 +27,16 @@ def identificador(nombre, n_documento):
 
 
 #Ejercicio 4
-
 def multiplo(num1, num2):
     if(num1%num2==0):
         return print(f"{num1} es multiplo de {num2}")
 
 #Ejercicio 5
-
 def medium(a,b):
     medium=(a+b)/2
     return medium
 
 #Ejercicio 6
-
 def spacebetween(text):
     i=0
     string_space=""
@@ -49,7 +46,6 @@ def spacebetween(text):
     return string_space
 
 #Ejercicio 7
-
 def max_min_num(array):
     max = array[0]
     min = array[0]
@@ -67,8 +63,13 @@ def perim_area(radius):
     return print(f"El área: {area}, el perímetro: {perim}")
 
 #Ejercicio 9
+def login(user,password):
+    if(user=="usuario1" and password=="asdasd"):
+        return True
 
-#Ejercicio 1
+#Ejercicio 10
+
+
 
 #Ejercicio 1
 
