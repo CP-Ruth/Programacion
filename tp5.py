@@ -51,5 +51,29 @@ for i in range(days):
 """
 #Ejercicio 6
 
-words = input("Ingresa un texto:\n")
-print(spacebetween(words))
+"""words = input("Ingresa un texto:\n")
+print(spacebetween(words))"""
+
+#Ejercicio 7
+#
+a=[]
+
+while True:
+    try:
+        quantity = int(input("¿Cuántos numeros quieres ingresar?\n"))
+        break
+    except ValueError:
+        print("El valor ingresado no es numérico")
+        continue
+for i in range(quantity):
+    while True:
+        try:
+            number = int(input(f"{i+1}: "))
+            break
+        except ValueError:
+            print("El valor ingresado no es numérico")
+            continue
+    a.append(number)
+
+max_min_num(a)
+

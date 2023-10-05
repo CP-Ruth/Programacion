@@ -48,11 +48,22 @@ def spacebetween(text):
         i+=1
     return string_space
 
-#Ejercicio 1
+#Ejercicio 7
 
-#Ejercicio 1
+def max_min_num(array):
+    max = array[0]
+    min = array[0]
+    for i in range(len(array)):
+        if max<array[i]:
+            max=array[i]
+        if min>array[i]:
+            min=array[i]
+    return print(f"El máximo valor es: {max}\nEl mínimo valor es: {min}")
 
-#Ejercicio 1
+#Ejercicio 8
+
+
+#Ejercicio 9
 
 #Ejercicio 1
 
