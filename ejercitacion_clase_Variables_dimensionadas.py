@@ -83,67 +83,15 @@ while True:
 
 #lista con datos e las compras
 #[(cliente, día del mes, monto, domicilio del cliente)]
-list_purchase=[("Nuria Costa", 5, 1234.5,"Calle 1 – 456"), ("Jorge Russo", 7, 3999, "Calle 2 – 741")]
+list_purchase=[("Nuria Costa", 5, 1234.5,"Calle 1 – 456"), ("Jorge Russo", 7, 3999, "Calle 2 – 741"), ("Carina solas", 5, 5000, "Calle 5 -159"), ("Jorge Russo", 7, 3999, "Calle 2 – 741")]
 
-
-option=input("")
-
-if(option==1):
-    new_customer=customer()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-"""lista=["1","2","3","4","5","6"]
-salida=1
-while salida!=0:
-    name=input("ingresa nombre")
-    for i in name:
-        if( i in lista):
-            print(i)
-            print("nombre incorrecto")
-        else:
-            salida=0"""
+answer=input("¿Queres agregar una compra a tu lista? S/N \n").upper()
+if answer== "S":
+    list_purchase.append(customer())
+else:
+    name= inf_customer(list_purchase, 0)
+    addrees= inf_customer(list_purchase, 3)
+    print("Tus clientes y direcciones son:")
+    for i in range(len(name)):
+        print(f"{name[i]}: {addrees[i]}")
+#me va a imprimir solo los 

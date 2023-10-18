@@ -35,3 +35,14 @@ def customer():
     tupla=(input("Ingrese Nombre y apellido del cliente: "),input("Día del mes: "), input("Monto: "), input("Domicilio: "))
     return tupla
 
+def inf_customer(array, number):
+    new_list_purchase=[]
+    for i in array:
+        new_list_purchase.append(i[number])
+    i=1
+    for element in new_list_purchase:
+        for i in range(len(new_list_purchase)):
+            if (new_list_purchase[i]==element and new_list_purchase.index(element) != i):
+                del new_list_purchase[i]
+
+    return new_list_purchase
