@@ -84,7 +84,7 @@ perim_area(radius)"""
 
 #Ejercicio 9
 
-time=0
+"""time=0
 while True:
     user_name = input("Ingresa tu usuario: ")
     user_password = input("Ingresa tu contraseña: ")
@@ -95,18 +95,31 @@ while True:
         print("Usuario o contraseña incorrecta.\nVuelva a intentarlo.")
         time+=1
     if(time==3):
-        print(f"Número de intentos: {time}\nAcceso denegado.")
+        print(f"Número de intentos: {time}\nAcceso denegado.")"""
 
 #Ejercicio 10
+#Haria una lista de diccionarios. Lo recorreria por elementos para calcular por separado el descuento de cada proucto e iría haciendo la sumatoria en un total.
+
+product={
+    'producto': 'Yerba',
+    'precio' : 1500,
+    'cantidad' : 2
+}
+print(discount(product,10)) #imprime el precio del producto con su descuento y 
+
+#Ejercicio 11
+names=('lucas','juan','santiago','jorge','thomy')
+
+def reversa(palabra):
+    for i in range(len(palabra), -1):
+        
+def function_list(función, lista):
 
 
+#Ejercicio 12
 
-#Ejercicio 8
-
-#Ejercicio 8
-
-#Ejercicio 8
-
-
-
-
+#Ejercicio 13
+#Ejercicio 14
+#Ejercicio 15
+#Ejercicio 16
+#Ejercicio 17

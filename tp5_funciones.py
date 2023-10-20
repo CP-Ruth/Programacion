@@ -69,8 +69,22 @@ def login(user,password):
 
 #Ejercicio 10
 
+def discount(dictionary, percentage):
+    price_discount=0
+    for key,value in dictionary.items():
+        if(key == 'precio'):
+            price_discount = value - (value*percentage/100)
+        if(key == 'cantidad'):
+            price_discount *= value
+    return price_discount
+
+#Ejercicio 11
 
 
-#Ejercicio 1
 
-#Ejercicio 1
+#Ejercicio 12
+#Ejercicio 13
+#Ejercicio 14
+#Ejercicio 15
+#Ejercicio 16
+#Ejercicio 17

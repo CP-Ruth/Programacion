@@ -142,7 +142,7 @@ while True:
         for index, dictionary in enumerate(members_list):
             if dictionary.get('nombre y apellido') == name_lastname:
                 index_delete=index
-        #tuve problema porque intente borar un diccionario min¿entras lo recorria
+        #tuve problema porque intente borrar un diccionario min¿entras lo recorria
         members_list.pop(index_delete)
 
     elif(option==6):
