@@ -1,4 +1,5 @@
 from tp5_funciones import*
+
 #Ejercicio 1
 
 """while True:
@@ -100,26 +101,43 @@ while True:
 #Ejercicio 10
 #Haria una lista de diccionarios. Lo recorreria por elementos para calcular por separado el descuento de cada proucto e iría haciendo la sumatoria en un total.
 
-product={
+"""product={
     'producto': 'Yerba',
     'precio' : 1500,
     'cantidad' : 2
 }
 print(discount(product,10)) #imprime el precio del producto con su descuento y 
-
+"""
 #Ejercicio 11
-names=('lucas','juan','santiago','jorge','thomy')
 
-def reversa(palabra):
-    for i in range(len(palabra), -1):
-        
-def function_list(función, lista):
+"""names=['lucas','juan','santiago','roberto','nahuel']
 
-
+print(order_lists(array_number,names))"""
 #Ejercicio 12
-
+"""sentence = input("Ingresa una frase: \n")
+print(string_dictionary(sentence))
+"""
 #Ejercicio 13
+#Escribir una función que calcule el módulo de un vector.
+"""vector = (5,6)
+print(module_vector(vector))
+"""
 #Ejercicio 14
+
+"""number_prim = int(input("Ingrese un número: "))
+print(prime_number(number_prim))
+"""
 #Ejercicio 15
+
+
+
+
 #Ejercicio 16
+
+number = input("Ingrese un numero entrero de varias cifras: ")
+digit = input("Ingrese el valor de UN dígito: ")
+
+print(exist(number, digit))
+
 #Ejercicio 17
+

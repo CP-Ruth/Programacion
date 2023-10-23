@@ -1,3 +1,5 @@
+import math
+
 #Ejercicio 1
 def ciclingdni(num_dni):
     if(len(str(num_dni))==8 or len(str(num_dni))==7):
@@ -80,11 +82,55 @@ def discount(dictionary, percentage):
 
 #Ejercicio 11
 
+def array_number(palabra):
+    palabra =  len(palabra)
+    return palabra
 
+def order_lists(función, lista):
+    new_list=[0]*len(lista)
+    for i in range(len(lista)):
+        new_list[i]=función(lista[i])
+    return new_list
 
 #Ejercicio 12
+
+def string_dictionary(string):
+    words= string.split()
+    dictionary_words ={}
+    for word in words:
+        dictionary_words[word] = len(word)
+    return dictionary_words
+
 #Ejercicio 13
+
+def module_vector(vector):
+    sum = 0
+    for i in range(len(vector)):
+        sum += vector[i]*vector[i]
+    module = math.sqrt(sum)
+    return module
+
 #Ejercicio 14
+
+def prime_number(number):
+    sum=0
+    prime = False
+    until = int(number/2)+1
+    for i in range(until):
+        if(i != 0 and number % i == 0):
+            sum +=1
+    if(sum==1):
+        prime = True
+    return prime
+
 #Ejercicio 15
 #Ejercicio 16
+
+def exist(numero_largo, digito):
+    sum = 0
+    for i in range(len(numero_largo)):
+        if(numero_largo[i]== digito):
+            sum +=1
+    return sum
+
 #Ejercicio 17
