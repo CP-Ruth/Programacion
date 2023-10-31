@@ -24,9 +24,25 @@ print(f"¿El número {n} es impar? {impar(n)}")
 """
 
 #Ejercicio 5
-
+"""
 mi_lista = [12, 45, 67, 32, 8, 94, 52]
 mayor = max(mi_lista)
 print("El mayor elemento de la lista es:", mayor)
+"""
+#Ejercicio 6
+"""
+original = [1, 3, 3, 7]
+n = 2
+resultado = repli(original, n)
+print(resultado)
+"""
+#Ejercicio 7
+"""
+num= int(input("Ingresa un numero: "))
+num2= int(input("Ingresa un numero: "))
 
+result = k(num,num2)
+print(result)
+"""
+#Ejercicio 8
 

@@ -63,23 +63,23 @@ def repli(array,number,index=0):
         results.append(array[index])
     return results + repli(array, number,index + 1)
 
-"""def repli(nums, n, index = 0):
-    if index == (len(nums)):
-        return []
-    num_list = []
-    for i in range(n):
-        num_list.append(nums[index])
-    return num_list + repli(nums, n, index + 1 )
-# Ejemplo de uso"""
-original = [1, 3, 3, 7]
-n = 2
-resultado = repli(original, n)
-print(resultado)
-
-
-
 #Ejercicio 7
+def k(n,p, index = 1):
+    if (n==index):
+        return n*p
+    elif(n<p):
+        return p*index + k(n,p,index +1)
+
 #Ejercicio 8
+def k(f,c, index = 1):
+    if (f==index):
+        return 1
+    elif(f > index):
+        return index + k(f,c,index +1)
+
+
+
+
 #Ejercicio 9
 #Ejercicio 10
 #Ejercicio 11
