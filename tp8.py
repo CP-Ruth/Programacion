@@ -17,10 +17,16 @@ resultado = rfind_in(frase, letra)
 print(resultado)"""
 
 #Ejercicio 4
-n = int(input("Ingrese un numero: "))
+"""n = int(input("Ingrese un numero: "))
 
 print(f"¿El número {n} es par? {par(n)}")
 print(f"¿El número {n} es impar? {impar(n)}")
+"""
 
+#Ejercicio 5
+
+mi_lista = [12, 45, 67, 32, 8, 94, 52]
+mayor = max(mi_lista)
+print("El mayor elemento de la lista es:", mayor)
 
 

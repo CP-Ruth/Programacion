@@ -28,11 +28,7 @@ def rfind_in(frase, letra, index=0):
     return results
 
 #Ejercicio 4
-"""
-4.	Escribir dos funciones mutualmente recursivas par(n) e impar(n) que determinen la paridad del numero natural dado, conociendo solo que:
-•	1 es impar.
-•	Si un número es impar, su antecesor es par; y viceversa.
-"""
+
 def par(n):
     if(n== 1):
         return False
@@ -47,9 +43,41 @@ def impar(n):
 
 #Ejercicio 5
 
-
+def Max(array):
+    if (len(array) == 0):
+        return array[0]
+    else:
+        max = max(array[1:])
+        if array[0]> max:
+            return array[0]
+        else:
+            return max
 
 #Ejercicio 6
+
+def repli(array,number,index=0):
+    if index == (len(array)):
+        return []
+    results = []
+    for i in range(number):
+        results.append(array[index])
+    return results + repli(array, number,index + 1)
+
+"""def repli(nums, n, index = 0):
+    if index == (len(nums)):
+        return []
+    num_list = []
+    for i in range(n):
+        num_list.append(nums[index])
+    return num_list + repli(nums, n, index + 1 )
+# Ejemplo de uso"""
+original = [1, 3, 3, 7]
+n = 2
+resultado = repli(original, n)
+print(resultado)
+
+
+
 #Ejercicio 7
 #Ejercicio 8
 #Ejercicio 9
