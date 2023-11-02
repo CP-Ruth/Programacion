@@ -71,9 +71,6 @@ def bubble_sort_desc(arr):
             if arr[j] < arr[j + 1]:  # Cambiar la condición de comparación
                 arr[j], arr[j + 1] = arr[j + 1], arr[j]
 
-array=[15,12,159,0,153,999,20]
-bubble_sort_desc(array)
-print(array)
 
 def selection_sort_desc(arr):
     n = len(arr)

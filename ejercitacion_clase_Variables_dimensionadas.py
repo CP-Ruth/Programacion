@@ -3,7 +3,7 @@ from ejercitacion_clase_Variables_dimensionadas_funciones import*
 # Ejercicio 1
 """#lista de viajeros:
     #[("nombre","DNI", "destino"), ()]
-list_passenger=[]
+list_passenger=[    ]
 
 #lista de ciudades y paises:
     #[("ciudad1","pais1"),("ciudad2","pais2"), ()]
