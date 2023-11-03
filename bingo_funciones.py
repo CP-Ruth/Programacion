@@ -21,8 +21,9 @@ def paint_numbers(matrix1, coordenadas):
                     matrix[i][j] = Fore.BLUE + str(matrix[row][column])
                 else:
                     matrix[i][j] = str(matrix[i][j])
+    
     print("---------------------------------\nTu carton es: ")
-    for i in range(5):
+    for i in range(len(matrix)):
         if i == 0:
             print("",matrix[i][0],"",matrix[i][1],"",matrix[i][2],"",matrix[i][3],"",matrix[i][4],)
         elif i ==1:
